@@ -8,13 +8,13 @@ set -e
 echo "Installing Fish shell..."
 sudo apt install -y fish
 
-# Start Fish shell
-echo "Starting Fish shell..."
-fish
-
 # Change the default shell to Fish
 echo "Changing default shell to Fish..."
 chsh -s $(which fish)
+
+# Start Fish shell
+echo "Starting Fish shell..."
+fish
 
 # Install Starship prompt
 echo "Installing Starship prompt..."
